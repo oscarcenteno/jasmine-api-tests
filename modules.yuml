@@ -1,0 +1,20 @@
+// {type:package}
+// {direction:leftToRight}
+[note: Modules export services (to perform actions and questions)]
+
+[configuration{bg:slategray}]-[note: protractor, browsers, reporters]
+[rr{bg:steelblue}]
+[sa{bg:steelblue}]
+[da{bg:steelblue}]
+[portal{bg:steelblue}]
+[admin{bg:steelblue}]
+[external.dependencies]
+
+[portal]->[wrappers]
+[portal]->[users and roles]
+
+[da]->[portal]
+[da]->[external.dependencies]
+[sa]->[external.dependencies]
+[rr]->[external.dependencies]
+[configuration]->[environment urls]

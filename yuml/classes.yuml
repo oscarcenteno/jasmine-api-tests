@@ -1,0 +1,11 @@
+// {type:class}
+// {direction:topDown}
+
+[specs{bg:slateblue}]-[note:Given-When-Then (business steps and expects)]
+[page components{bg:steelblue}]-[note:locators (xpath, css)]
+[wrappers{bg:steelblue}]-[note:selenium, hml]
+[actions/questions{bg:steelblue}]-[note:ui steps, selenium]
+
+[specs]->[actions/questions]
+[actions/questions]->[page components]
+[actions/questions]->[wrappers]

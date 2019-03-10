@@ -1,0 +1,9 @@
+
+// {type:package}
+// {direction:leftToRight}
+
+[No color]
+[azure4{bg:#00bb77}]-[note: lightyellow {bg:lightyellow}]
+[steelblue{bg:steelblue}]
+//[dimgray{bg:dimgray}]
+//[darkgray{bg:darkgray}]

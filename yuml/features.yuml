@@ -1,0 +1,8 @@
+// {type:usecase}
+// {direction:leftToRight}
+// {generate:true}
+
+[Admin]-(Add MP)
+[KRR Admin]-(Edit MP)
+[KRM Operator]-(Add Metric Standard)
+[KRM Operator]-(Add Report Standard)
