@@ -1,0 +1,51 @@
+# Your results!
+
+## Features
+
+| Feature        | Pass           | Failed  | Ignored  |
+| ------------- |:-------------:| -----:|-----:|
+<%= summaryTable %>
+
+## Summary
+
+```chart
+{
+  "type": "doughnut",
+  "data": {
+    "labels": [
+      "Failed",
+      "Passed",
+      "Ignored"
+    ],
+    "datasets": [
+      {
+        "label": "Summary",
+        "data": [
+          <%= failed %>,
+          <%= passed %>,
+          <%= ignored %>
+        ],
+
+        "backgroundColor": [
+          "#FF6384",
+          "#90EE90",
+          "#FFCE56"
+        ]
+      }
+    ]
+  },
+  "options": {
+      "title": {
+            "display": "true",
+            "text": "Aggregated results"
+        },
+        
+                "scales":{
+                    "xAxes":[
+                        {"ticks":{
+                            "beginAtZero":true}
+                            }
+                            ]}
+  }
+}
+```

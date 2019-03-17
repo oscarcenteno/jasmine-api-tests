@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="Swagger pages" timestamp="2019-03-14T17:55:24" hostname="localhost" time="0.013" errors="0" tests="5" skipped="0" disabled="0" failures="0">
+  <testcase classname="Swagger pages" name="RR is available" time="0.003" />
+  <testcase classname="Swagger pages" name="SA is available" time="0" />
+  <testcase classname="Swagger pages" name="DA is available" time="0" />
+  <testcase classname="Swagger pages" name="Entitlements is available" time="0" />
+  <testcase classname="Swagger pages" name="SS is available" time="0" />
+ </testsuite>
+ <testsuite name="Login API" timestamp="2019-03-14T17:55:24" hostname="localhost" time="0.004" errors="0" tests="2" skipped="0" disabled="0" failures="0">
+  <testcase classname="Login API" name="Can login and retrieve auth token" time="0" />
+  <testcase classname="Login API" name="Can login as KRM Operator" time="0" />
+ </testsuite>
+</testsuites>

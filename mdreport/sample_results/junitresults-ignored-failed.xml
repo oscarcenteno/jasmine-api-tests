@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="Login API" timestamp="2019-03-14T23:39:34" hostname="localhost" time="0.682" errors="0" tests="2" skipped="1" disabled="0" failures="0">
+  <testcase classname="Login API" name="Can login as KRM Operator" time="0.015">
+   <skipped message="Temporarily disabled with xit" />
+  </testcase>
+  <testcase classname="Login API" name="Can login and retrieve auth token" time="0.664" />
+ </testsuite>
+ <testsuite name="Swagger pages" timestamp="2019-03-14T23:39:35" hostname="localhost" time="0.249" errors="0" tests="5" skipped="1" disabled="0" failures="1">
+  <testcase classname="Swagger pages" name="DA is available" time="0.081">
+   <failure type="toEqual" message="Expected 200 to equal 2001."><![CDATA[Error: Expected 200 to equal 2001.
+    at stack (C:\Users\OSCAR\IdeaProjects\rdarr-automation-test\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1577:17)
+    at buildExpectationResult (C:\Users\OSCAR\IdeaProjects\rdarr-automation-test\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1547:14)
+    at Spec.expectationResultFactory (C:\Users\OSCAR\IdeaProjects\rdarr-automation-test\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:638:18)
+    at Spec.addExpectationResult (C:\Users\OSCAR\IdeaProjects\rdarr-automation-test\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:330:34)
+    at Expectation.addExpectationResult (C:\Users\OSCAR\IdeaProjects\rdarr-automation-test\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:588:21)
+    at Expectation.toEqual (C:\Users\OSCAR\IdeaProjects\rdarr-automation-test\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1501:12)
+    at C:\Users\OSCAR\IdeaProjects\rdarr-automation-test\api\portal\swagger\swagger.pages.spec.js:13:41
+    at process._tickCallback (internal/process/next_tick.js:109:7)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Swagger pages" name="RR is available" time="0.001">
+   <skipped message="Temporarily disabled with xit" />
+  </testcase>
+  <testcase classname="Swagger pages" name="SS is available" time="0.068" />
+  <testcase classname="Swagger pages" name="SA is available" time="0.06" />
+  <testcase classname="Swagger pages" name="Entitlements is available" time="0.03" />
+ </testsuite>
+</testsuites>
