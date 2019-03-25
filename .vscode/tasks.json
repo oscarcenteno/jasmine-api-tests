@@ -1,34 +1,34 @@
 {
-    // See https://go.microsoft.com/fwlink/?LinkId=733558 
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
     // for the documentation about the tasks.json format
     "version": "2.0.0",
     "tasks": [
-        {
-            "label": "Run tests",
-            "type": "npm",
-            "script": "test",
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "problemMatcher": {
-                "owner": "javascript",
-                "fileLocation": "absolute",
-                "pattern": {
-                    // The regular expression. Example to match: helloWorld.c:5:3: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
-                    "regexp": "^then.response ((.*):(\\d+):(\\d+))$",
-                    // The first match group matches the file name which is relative.
-                    "file": 1,
-                    // The second match group matches the line on which the problem occurred.
-                    "line": 2,
-                    // The third match group matches the column at which the problem occurred.
-                    "column": 3,
-                    // The fourth match group matches the problem's severity. Can be ignored. Then all problems are captured as errors.
-                    "severity": 4,
-                    // The fifth match group matches the message.
-                    "message": 5
-                }
-            }
+      {
+        "label": "Run tests",
+        "type": "npm",
+        "script": "test",
+        "group": "build",
+        "problemMatcher": {
+          "owner": "javascript",
+          "fileLocation": "absolute",
+          "pattern": {
+            "regexp": "^then.response ((.*):(\\d+):(\\d+))$",
+            "file": 1,
+            "line": 2,
+            "column": 3,
+            "severity": 4,
+            "message": 5
+          }
         }
+      },
+      {
+        "type": "npm",
+        "script": "lint",
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": ["$eslint-stylish"]
+      }
     ]
 }
