@@ -137,15 +137,7 @@ module.exports = {
 	//   `hyperpower`
 	//   `@company/project`
 	//   `project#1.0.1`
-	plugins: [
-		'hyperpower',
-		'hypercwd',
-		'hyperborder',
-		'hyperterm-tab-icons',
-		'hyper-blink',
-		'hyperterm-cursor',
-		'shades-of-purple-hyper'
-	],
+	plugins: [ 'hyperpower', 'hypercwd', 'hyperborder', 'hyperterm-tab-icons', 'hyper-blink', 'hyperterm-cursor' ],
 	//  'shades-of-purple-hyper'
 
 	// 'hyper-oceans16'

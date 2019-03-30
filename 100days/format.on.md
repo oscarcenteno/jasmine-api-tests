@@ -1,4 +1,4 @@
-Format on save
+# Format on save
 
 prettier
 
