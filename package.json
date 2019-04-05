@@ -5,15 +5,12 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "jasmine",
-		"lint": "./node_modules/.bin/eslint ./ --cache --ignore-pattern .gitignore",
-		"precommit-msg": "echo 'Pre-commit checks...' && exit 0"
+		"lint": "./node_modules/.bin/eslint ./ --cache --ignore-pattern .gitignore"
 	},
-	"pre-commit": [ "precommit-msg", "lint" ],
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
-		"eslint": "^5.15.1",
-		"pre-commit": "^1.2.2"
+		"eslint": "^5.15.1"
 	},
 	"dependencies": {
 		"axios": "^0.18.0",
