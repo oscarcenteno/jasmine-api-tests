@@ -11,6 +11,19 @@
     "editor.fontSize": 17,
     "editor.fontLigatures": true,
     "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
-    "editor.fontWeight": "300" // Light
+    "editor.fontWeight": "300",
+    "sqltools.connections": [
+      {
+        "askForPassword": false,
+        "connectionTimeout": 30,
+        "database": "IBjPJNoFEE",
+        "dialect": "MySQL",
+        "name": "IBjPJNoFEE",
+        "password": "GqytP8XKCz",
+        "port": 3306,
+        "server": "remotemysql.com",
+        "username": "IBjPJNoFEE"
+      }
+    ] // Light
 
 }
