@@ -6,12 +6,7 @@
         "**/.factorypath": true
 
     },
-    "files.trimTrailingWhitespace": true,
     "editor.formatOnSave": true,
-    "editor.fontSize": 17,
-    "editor.fontLigatures": true,
-    "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
-    "editor.fontWeight": "300",
     "sqltools.connections": [
       {
         "askForPassword": false,
@@ -24,6 +19,19 @@
         "server": "remotemysql.com",
         "username": "IBjPJNoFEE"
       }
-    ] // Light
+    ], // Light
+
+    "editor.fontSize": 17,
+    "editor.lineHeight": 25,
+    "editor.letterSpacing": 0.5,
+    "files.trimTrailingWhitespace": true,
+    "prettier.eslintIntegration": true,
+    "editor.cursorStyle": "line",
+    "editor.cursorWidth": 3,
+    "editor.cursorBlinking": "solid",
+    "editor.renderWhitespace": "boundary",
 
 }
+// 'Fira Code Light',
+// Menlo
+// Monaco
