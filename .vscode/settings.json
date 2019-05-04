@@ -21,7 +21,7 @@
       }
     ], // Light
 
-    "editor.fontSize": 17,
+    "editor.fontSize": 25,
     "editor.lineHeight": 25,
     "editor.letterSpacing": 0.5,
     "files.trimTrailingWhitespace": true,
@@ -29,7 +29,11 @@
     "editor.cursorStyle": "line",
     "editor.cursorWidth": 3,
     "editor.cursorBlinking": "solid",
-    "editor.renderWhitespace": "boundary",
+    "editor.renderWhitespace": "none",
+
+    "workbench.colorTheme": "Sepia",
+    "scoper.endColor": "#accbf2",
+    "scoper.highlightColor": "#d6cab1"
 
 }
 // 'Fira Code Light',

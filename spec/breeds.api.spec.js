@@ -3,7 +3,7 @@ var Api = require('./breeds.api');
 describe('Dog API', function() {
 	var api;
 
-  beforeAll(() => {
+	beforeAll(() => {
 		api = new Api('https://dog.ceo/api');
 	});
 

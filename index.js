@@ -36,7 +36,7 @@ function generateValues(testResults) {
 
 function getTotalPassed(summary) {
 	var total = 0;
-	summary.forEach((element) => {
+	summary.forEach(element => {
 		total = total + element.pass;
 	});
 
@@ -45,7 +45,7 @@ function getTotalPassed(summary) {
 
 function getTotalFailed(summary) {
 	var total = 0;
-	summary.forEach((element) => {
+	summary.forEach(element => {
 		total = total + element.failed;
 	});
 
@@ -54,7 +54,7 @@ function getTotalFailed(summary) {
 
 function getTotalIgnored(summary) {
 	var total = 0;
-	summary.forEach((element) => {
+	summary.forEach(element => {
 		total = +total + +element.ignored;
 	});
 
@@ -65,7 +65,7 @@ function getSummary(testResults) {
 	var summary = [];
 	var suites = testResults.testsuites.testsuite;
 
-	suites.forEach((element) => {
+	suites.forEach(element => {
 		var attributes = element._attributes;
 		var name = attributes.name;
 		var failed = calculateFailed(element);
@@ -101,8 +101,8 @@ function getSummary(testResults) {
 function getSummaryTable(summary) {
 	var table = '';
 
-	summary.forEach((element) => {
-		if (table == '') {
+	summary.forEach(element => {
+		if ( table == '') {
 			table = getSummaryRow(element);
 		} else {
 			table = table + '\n' + getSummaryRow(element);
@@ -111,6 +111,8 @@ function getSummaryTable(summary) {
 
 	return table;
 }
+
+
 
 function getSummaryRow(summarySuite) {
 	// TODO: Consider string-placeholder library
@@ -128,7 +130,7 @@ function calculateFailed(suite) {
 
 	// if there is more than one test case
 	if (Array.isArray(suite.testcase)) {
-		suite.testcase.forEach((testcase) => {
+		suite.testcase.forEach(testcase => {
 			var fail = false;
 
 			// if there is more than one failure
